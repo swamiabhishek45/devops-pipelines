@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - name: Checkout code
+      name: Checkout code
       uses: actions/checkout@v5
     
-    - name: Set Up Node.js
+      name: Set Up Node.js
       uses: actions/setup-node@3
       with: 
         node-version: 25
 
-    - name: Install dependencies
+      name: Install dependencies
       run: npm install
     
-    - name: Run tests
+      name: Run tests
       run: npm test
